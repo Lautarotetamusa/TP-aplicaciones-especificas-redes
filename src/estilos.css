@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.cabecera{
+  position: static;
+  width: 100%;
+  height: 150px;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: red;
+}
+
+
+.imagen{
+  margin: 10px;
+}
