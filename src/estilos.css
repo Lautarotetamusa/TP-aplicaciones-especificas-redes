@@ -5,15 +5,43 @@ body{
 
 
 .cabecera{
+  display: flex;
+  flex-direction: row;
+
   position: static;
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  height: 80px;
+  margin-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
-  background: red;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background: #eee;
+  border: solid 1px #dce3e5;
+
+  justify-content: space-between;
 }
 
-
 .imagen{
-  margin: 10px;
+  height: 80px;
+  width: 80px;
+  vertical-align: bottom;
+}
+
+.botonera_chica{
+  display: inline-block;
+  position: relative;
+  height: 55px;
+  width: 55px;
+  margin: 12.5px 0 12.5px 0;
+
+  border: 1px solid #ccd3d5;
+  border-radius: 8px;
+
+  align-items: flex-end;
+}
+
+.imagen_botonera{
+  width: inherit;
+  height: inherit;
 }
