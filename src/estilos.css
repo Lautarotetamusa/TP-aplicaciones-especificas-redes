@@ -1,8 +1,12 @@
+
 body{
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif
+  color: #9E9E9E;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
-  color: #3c3c3c;
 }
 
 
@@ -10,7 +14,8 @@ body{
   display: flex;
   flex-direction: row;
 
-  position: static;
+  position: fixed;
+  z-index: 100;
   width: 80%;
   height: 80px;
   margin-top: 20px;
@@ -54,13 +59,13 @@ body{
 
 .footer{
  font-family: Arial;
- position: fixed;
+ position: static;
  left: 0;
  bottom: 0;
  display: block;
  width: 100%;
- background-color: #003366;
- color: white;
+ background-color: #FFE062;
+ color: black;
 }
 
 .dropdown{
@@ -73,7 +78,7 @@ body{
   margin-top: 20px;
   color: white;
 
-  background: #003366;
+  background: #e4ac2b;
   border: 1px solid #ccd3d5;
   border-radius: 8px 0px 0px 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -100,4 +105,91 @@ body{
 
 .opcion:hover{
   opacity: 0.5;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 10;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__image--barbarian {
+  background-image: url("../media/fondo_barbaro.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.clash-card__image--archer {
+  background-image: url("../media/fondo_arquera.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--giant {
+  background-image: url("../media/fondo_gigante.jpg");
+  img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.clash-card__image--goblin {
+  background-image: url("../media/fondo_duende.jpg");
+  img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--wizard {
+  background-image: url("../media/fondo_mago.jpg");
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
 }
