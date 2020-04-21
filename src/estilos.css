@@ -45,3 +45,15 @@ body{
   width: inherit;
   height: inherit;
 }
+
+.footer{
+ font-family: Arial;
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ display: block;
+ width: 100%;
+ background-color: #003366;
+ color: white;
+ text-align: bottom;
+}
