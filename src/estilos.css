@@ -1,8 +1,11 @@
+
 body{
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
-  color: #3c3c3c;
+  background: linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/coc-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif
+  color: #9E9E9E;
+  margin-top: 30px;
 }
 
 .cabecera{
@@ -90,37 +93,15 @@ div.img span{
 	width: 150px;
 	height: 100px;
 }
-
-.tarjetas{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px;
-  height: 40px;
-  width: 100%;
-  text-align: center;
-}
-#t1{background-color: #003366;}
-#t2{background-color: #006699;}
-#t3{background-color: #33cccc;}
-#t4{background-color: #00ffff;}
-#t5{background-color: #66ffff;}
-#t6{background-color: #ccffff;}
-#t7{background-color: #ffffff;}
-#t8{background-color: #ffcccc;}
-#t9{background-color: #ff9999;}
-#t10{background-color: #ff6666;}
-#t11{background-color: #ff5050;}
-#t12{background-color: #cc0000;}
-
 .footer{
  font-family: Arial;
- position: fixed;
+ position: static;
  left: 0;
  bottom: 1px;
  display: block;
  width: 100%;
- background-color: #003366;
- color: white;
+ background-color: #FFE062;
+ color: black;
 }
 
 .dropdown{
@@ -160,4 +141,91 @@ div.img span{
 
 .opcion:hover{
   opacity: 0.5;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+
+
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__image--barbarian {
+  background-image: url("../media/fondo_barbaro.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.clash-card__image--archer {
+  background-image: url("../media/fondo_arquera.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--giant {
+  background-image: url("../media/fondo_gigante.jpg");
+  img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.clash-card__image--goblin {
+  background-image: url("../media/fondo_duende.jpg");
+  img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--wizard {
+  background-image: url("../media/fondo_mago.jpg");
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
 }
