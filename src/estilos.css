@@ -1,6 +1,8 @@
 body{
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif;
+  color: #3c3c3c;
 }
 
 
@@ -29,21 +31,25 @@ body{
 }
 
 .botonera_chica{
-  display: inline-block;
+  display: inline;
   position: relative;
+  text-align: right;
+  width: 40%;
+  height: 300px;
+}
+
+.menu_text{
+  display: inline;
+  margin-right: 5px;
+}
+.imagen_botonera{
   height: 55px;
   width: 55px;
   margin: 12.5px 0 12.5px 0;
 
   border: 1px solid #ccd3d5;
   border-radius: 8px;
-
-  align-items: flex-end;
-}
-
-.imagen_botonera{
-  width: inherit;
-  height: inherit;
+  vertical-align: middle;
 }
 
 .footer{
@@ -55,5 +61,43 @@ body{
  width: 100%;
  background-color: #003366;
  color: white;
- text-align: bottom;
+}
+
+.dropdown{
+  text-align: center;
+  display: block;
+  opacity: 0;
+
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+  color: white;
+
+  background: #003366;
+  border: 1px solid #ccd3d5;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  transition: opacity 0.2s linear;
+}
+
+.contenedor_opciones{
+  padding: 0;
+}
+
+.opcion{
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.ref{
+  color: white;
+  text-decoration: none;
+}
+
+.opcion:hover{
+  opacity: 0.5;
 }
