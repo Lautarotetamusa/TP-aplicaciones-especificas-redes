@@ -12,18 +12,27 @@
 
     <header class="cabecera">
       <img class="imagen" src="../media/logo.jpg" alt="">
-      <div class="botonera_chica"id="botonera" >
+      <div class="botonera_grande" id="botonera_grande" >
+        <ul style="padding: 0; margin: 0" >
+          <li class="boton"  onclick="location.href='https://www.github.com'">Github</span></li>
+          <li class="boton"  onclick="location.href='https://www.github.com'">Twitter</a></li>
+          <li class="boton"  onclick="location.href='https://www.github.com'">Instagram</a></li>
+          <li class="boton"  onclick="location.href='https://www.github.com'">Youtube</a></li>
+          <li class="boton"  onclick="location.href='https://www.github.com'">Gmail</a></li>
+        </ul>
+      </div>
+
+      <div class="botonera_chica" id="botonera_chica" >
         <h2 class="menu_text">Menu</h2>
         <img class="imagen_botonera" src="../media/boton_desplegable.png" id="boton">
 
-
         <div class="dropdown" id="dropdown">
-          <ul class="contenedor_opciones" style="padding: 0; margin: 0" >
-            <li class="opcion" style="background:#c49018"><a class="ref"  href="https://www.github.com"> Github </a></li>
-            <li class="opcion" style="background:#e4ac2b;"><a class="ref" href="https://twitter.com/"> Twitter </a></li>
-            <li class="opcion" style="background:#c49018"><a class="ref"  href="https://www.instagram.com/"> Instagram </a></li>
-            <li class="opcion" style="background:#e4ac2b"><a class="ref"  href="https://www.youtube.com/"> Youtube </a></li>
-            <li class="opcion" style="background:#c49018"><a class="ref"  href="https://mail.google.com/"> Gmail </a></li>
+          <ul style="padding: 0; margin: 0" >
+            <li class="boton_dropdown" style="background:#c49018" onclick="location.href='https://www.github.com'">Github</span></li>
+            <li class="boton_dropdown" style="background:#e4ac2b" onclick="location.href='https://www.github.com'">Twitter</a></li>
+            <li class="boton_dropdown" style="background:#c49018" onclick="location.href='https://www.github.com'">Instagram</a></li>
+            <li class="boton_dropdown" style="background:#e4ac2b" onclick="location.href='https://www.github.com'">Youtube</a></li>
+            <li class="boton_dropdown" style="background:#c49018" onclick="location.href='https://www.github.com'">Gmail</a></li>
           </ul>
         </div>
       </div>
@@ -89,9 +98,23 @@
     </footer>
 
     <script type="text/javascript">
-      var boton = document.getElementById("boton");
 
-      boton.addEventListener("mouseenter", verDropdown);
+      var botoneraG = document.getElementById("botonera_grande");
+      var botoneraC = document.getElementById("botonera_chica");
+
+
+      if(window.innerWidth > 720){ //Desktop
+        botonera_grande();
+      }
+      else{
+        botonera_chica();
+
+        var boton = document.getElementById("boton");
+
+        boton.addEventListener("mouseenter", verDropdown);
+      }
+
+      window.addEventListener('resize', resize);
     </script>
 
   </body>
