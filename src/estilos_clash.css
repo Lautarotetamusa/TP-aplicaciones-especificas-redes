@@ -1,0 +1,85 @@
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.clash-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 10;
+}
+
+.clash-card__image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.clash-card__image--barbarian {
+  background-image: url("../media/fondo_barbaro.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.clash-card__image--archer {
+  background-image: url("../media/fondo_arquera.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--giant {
+  background-image: url("../media/fondo_gigante.jpg");
+  img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.clash-card__image--goblin {
+  background-image: url("../media/fondo_duende.jpg");
+  img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.clash-card__image--wizard {
+  background-image: url("../media/fondo_mago.jpg");
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
+}
