@@ -9,22 +9,30 @@ body{
   padding: 0;
 }
 
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border_shadow{
+  border: solid 1px #dce3e5;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 .cabecera{
   display: flex;
-  flex-direction: row;
   position: fixed;
+  justify-content: space-between;
+
   z-index: 100;
   width: 80%;
   height: 80px;
   margin-top: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  background: #eee;
-  border: solid 1px #dce3e5;
+  padding: 10px 10% 10px 10%;
 
-  justify-content: space-between;
+  background: #eee;
 }
 
 .imagen{
@@ -41,65 +49,53 @@ body{
 }
 
 .botonera_grande{
-  display: flex;
-  align-items: center;
   text-align: left;
-  width: inherit;
 }
 
 .menu_text{
   display: inline;
   margin-right: 5px;
 }
+
 .imagen_botonera{
   height: 55px;
   width: 55px;
   margin: 12.5px 0 12.5px 0;
 
-  border: 1px solid #ccd3d5;
+  border: 1px solid #dce3e5;
   border-radius: 8px;
   vertical-align: middle;
+  transition: opacity 0.1s linear;
+}
+
+.imagen_botonera:hover{
+  opacity: 0.7;
 }
 
 .footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-   margin-top: 100px;
-   height: 100px;
-   background: #c49018;
+  margin-top: 100px;
+  height: 100px;
+  background: #c49018;
 
-   border: 1px solid #e4ac2b;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px solid #e4ac2b;
+  box-shadow: 2px -15px 31px -4px rgba(18,18,16,0.65);
+}
 
-   box-shadow: 2px -15px 31px -4px rgba(18,18,16,0.65);
-
+.integrantes{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .dropdown{
-  text-align: center;
-  display: block;
   opacity: 0;
-
-  height: 200px;
-  width: 100%;
   margin-top: 20px;
-
   background: #e4ac2b;
-  border: 1px solid #ccd3d5;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-
+  border: 1px solid #e4ac2b;
   transition: opacity 0.2s linear;
 }
 
 .boton_dropdown{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  width: 100%;
   height: 40px;
-  vertical-align: middle;
 }
 
 .boton_dropdown:hover{
@@ -108,8 +104,10 @@ body{
 
 .boton{
   display: inline-block;
+
   margin-right: 18px;
   height: 20px;
+
   font-weight: bold;
   font-size: 18px;
 }
