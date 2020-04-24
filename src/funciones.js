@@ -30,6 +30,30 @@ function resize(){
   }
 }
 
+var estado = 3;
+var stop = false;
+var imagen;
+
+
+function init(id){
+  imagen = document.getElementById(id);
+  stop = false;
+}
+
+function vibracion(){
+
+  if(!stop){
+    imagen.style.transform = 'rotate('+estado+'deg)';
+    estado = -estado;
+    setTimeout("vibracion()", 50);
+  }
+}
+
+function novibracion(imagen){
+  imagen.style.transform = 'none';
+  stop = true;
+}
+
 function botonera_chica(){
   var botoneraG = document.getElementById("botonera_grande");
   var botoneraC = document.getElementById("botonera_chica");
