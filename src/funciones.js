@@ -54,6 +54,13 @@ function novibracion(imagen){
   stop = true;
 }
 
+function escala_de_grises(img){
+  img.style.filter =  "grayscale(100%)" ;
+}
+function Normal(img){
+  img.style.filter = "grayscale(0%)" ;
+}
+
 function botonera_chica(){
   var botoneraG = document.getElementById("botonera_grande");
   var botoneraC = document.getElementById("botonera_chica");
