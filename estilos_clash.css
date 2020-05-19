@@ -1,0 +1,84 @@
+.slide-container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.carta {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: $border-radius-size + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 0;
+}
+
+.carta_imagen {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: $border-radius-size;
+  border-top-right-radius: $border-radius-size;
+}
+
+.carta_imagen_barbaro{
+  background-image: url("media/fondo_barbaro.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.carta_imagen_arquera {
+  background-image: url("media/fondo_arquera.jpg");
+  img {
+    width: 400px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.carta_imagen_gigante {
+  background-image: url("media/fondo_gigante.jpg");
+  img {
+    width: 340px;
+    position: absolute;
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.carta_imagen_duende {
+  background-image: url("media/fondo_duende.jpg");
+  img {
+    width: 370px;
+    position: absolute;
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.carta_imagen_mago {
+  background-image: url("media/fondo_mago.jpg");
+  img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+  }
+}
